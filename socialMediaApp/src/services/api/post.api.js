@@ -26,8 +26,7 @@ export const getPostById = async (id) => {
   } catch (error) {
     return errorHandler(error);
   }
-  
-}
+};
 
 export const createPost = async (data) => {
   try {
@@ -89,7 +88,6 @@ export const deleteAllPosts = async () => {
     const response = await Post({
       method: "delete",
       url: ENDPOINTS.POST.INDEX,
-
     });
     return successHandler(response);
   } catch (error) {
